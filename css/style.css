@@ -1,0 +1,120 @@
+@import url(./variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: 0;
+}
+
+body {
+    width: 100svw;
+    height: 100svh;
+    background-color: var(--color-lightgray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik";
+    overflow: hidden
+}
+
+.main {
+    height: 90%;
+    width: 90%;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #8a8a8a;
+}
+
+.main .header {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    gap: 15px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.main .header > * {
+    filter: drop-shadow(0px 2px 5px #5c8ca0);
+}
+
+.main .header i {
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+
+.main .blank {
+    height: 10%;
+}
+.main .users {
+    height: 80%;
+}
+
+.main .users .searchUsers {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    align-items: center;
+}
+
+
+
+
+.searchUsers p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.searchUsers #idUser {
+    outline: none;
+    font-size: 18px;
+    padding-block: 5px;
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid var(--color-lightgray);
+    padding-inline: 10px;
+}
+
+
+.main .users .containerUsers {
+    height: 90%;
+    background-color: var(--color-black);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding-block: 15px;
+    padding-inline: 30px;
+    border-radius: 0px 0px 10px 10px;
+    gap: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.containerUsers .cardUser {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 10px;
+    gap: 10px;
+}
+.containerUsers .cardUser img {
+    margin-top: 10px;
+    border-radius: 100%;
+}
+
+.containerUsers .cardUser .userName {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.containerUsers .cardUser .id, .containerUsers .cardUser .phone {
+    display: flex;
+    gap: 5px;
+}
+

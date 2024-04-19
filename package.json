@@ -1,0 +1,17 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "description": "Only for studying purposes",
+  "main": "./js/main.js",
+  "type": "module",
+  "scripts": {
+    "dataFire": "json-server ./js/db/randomUser.json",
+    "dev": "node ./js/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
