@@ -19,11 +19,14 @@ body {
 }
 
 .main {
-    height: 90%;
+    height: 80%;
     width: 90%;
     background-color: var(--color-white);
     border-radius: 10px;
     box-shadow: 0px 0px 15px #8a8a8a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main .header {
@@ -46,12 +49,8 @@ body {
     margin-left: 30px;
 }
 
-
-.main .blank {
-    height: 10%;
-}
 .main .users {
-    height: 80%;
+    height: 90%;
 }
 
 .main .users .searchUsers {
@@ -118,3 +117,22 @@ body {
     gap: 5px;
 }
 
+.loading {
+
+    border: 8px solid transparent;
+    border-top-color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: loadingRotating 1s infinite linear;
+}
+
+@keyframes loadingRotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
