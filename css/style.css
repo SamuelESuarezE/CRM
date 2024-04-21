@@ -101,6 +101,7 @@ body {
     align-items: center;
     padding-block: 10px;
     gap: 10px;
+    position: relative;
 }
 .containerUsers .cardUser img {
     margin-top: 10px;
@@ -112,27 +113,19 @@ body {
     font-weight: 500;
 }
 
+.containerUsers .cardUser .email {
+    text-align: center;
+}
+
 .containerUsers .cardUser .id, .containerUsers .cardUser .phone {
     display: flex;
     gap: 5px;
 }
 
-.loading {
-
-    border: 8px solid transparent;
-    border-top-color: var(--color-primary);
-    border-left-color: var(--color-primary);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    animation: loadingRotating 1s infinite linear;
-}
-
-@keyframes loadingRotating {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.containerUsers .cardUser #trashIcon {
+    position: absolute;
+    right: 10px;
+    color: var(--color-lightgray);
+    font-size: 25px;
+    cursor: pointer;
 }

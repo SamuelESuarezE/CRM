@@ -17,12 +17,21 @@ function loadUsers() {
                 <i class="bi bi-phone"></i>
                 <p>${usuario.phone}</p>
         </div>
+        <i class="bi bi-trash3-fill" id="trashIcon"></i>
         </div>
         `
     }
-
-
     containerUsers.innerHTML = usersHTML;
+    deleteUser()
+}
+
+function deleteUser() {
+    let trashIcons = document.querySelectorAll("#trashIcon");
+    trashIcons.forEach(icon => {
+        icon.onclick = () => {
+            icon.parentElement.remove()
+        }
+    })
 }
 
 loadUsers()
