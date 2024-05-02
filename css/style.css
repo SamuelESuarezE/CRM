@@ -68,14 +68,10 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
-.searchUsers #idUser {
-    outline: none;
-    font-size: 18px;
-    padding-block: 5px;
-    width: 40%;
-    border-radius: 10px;
-    border: 2px solid var(--color-lightgray);
-    padding-inline: 10px;
+
+.searchUsers i {
+    font-size: 25px;
+    cursor: pointer;
 }
 
 
@@ -128,4 +124,38 @@ body {
     color: var(--color-lightgray);
     font-size: 25px;
     cursor: pointer;
+}
+
+.createUserPopUpBg {
+    position: absolute;
+    width: 100svw;
+    height: 100svh;
+    background-color: rgba(0, 0, 0, 0.219);
+    display: grid;
+    place-items: center;
+}
+
+.createUserPopUp {
+    height: 650px;
+    aspect-ratio: 5 / 7;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#inputImg {
+    display: none;
+}
+
+.createUserPopUp .inputImgUser {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #cccccc;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    font-size: 60px;
+    display: grid;
+    place-items: center;
 }
